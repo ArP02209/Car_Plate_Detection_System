@@ -1,2 +1,2 @@
-ACCESS_KEY = 'AKIA2MU4KRN73MVGMMOP'
-SECRET_KEY = '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'
+ACCESS_KEY = '*******************'
+SECRET_KEY = '**********************'
