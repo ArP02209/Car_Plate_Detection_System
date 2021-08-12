@@ -28,8 +28,8 @@ def upload():
             f = request.files['file1']
             #cv2.imwrite("final_img.jpg", f)
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename)))
-            ACCESS_KEY = 'AKIA2MU4KRN73MVGMMOP'
-            SECRET_KEY = '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'
+            ACCESS_KEY = '*****************'
+            SECRET_KEY = '********************'
             bucket="task8ml"
             s3_file="user_file.png"
 
