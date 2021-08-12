@@ -14,7 +14,6 @@ import os
 import requests
 import json
 import xmltodict
-import aws_credentials
 carplate_haar_cascade = cv2.CascadeClassifier('./haarcascade_russian_plate_number.xml')
 
 
@@ -95,8 +94,8 @@ def detected_number_plate(img):
 
     cv2.imwrite("final_img.jpg", carplate_extract_img)
 
-    ACCESS_KEY = aws_credentials.ACCESS_KEY
-    SECRET_KEY = aws_credentials.SECRET_KEY
+    ACCESS_KEY ="********************"
+    SECRET_KEY = "*******************"
     bucket="task8ml"
     s3_file="car.png"
 
