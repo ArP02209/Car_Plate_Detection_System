@@ -1,0 +1,93 @@
+<html>
+ <head>
+  <title>CAR INFO DESK</title>
+ </head>
+
+
+
+<style>
+ body{ margin: 0; 
+      padding:0;
+    }
+
+ div#hd{ 
+      height:100vh; 
+      background-image: url(https://www.wallpapertip.com/wmimgs/220-2207412_car-background-wallpaper.jpg); 
+      background-size: cover; 
+      background-position:center; 
+      display: flex; 
+      justify-content: left; 
+      padding-left:30px; 
+      font-family: sans-serif; 
+      } 
+
+ h1{ text-align:center;
+     margin-left:50px;
+     margin-top:160px;
+     color:#fff; 
+     margin-bottom:20px; 
+     font-size: 60px;  
+     letter-spacing: 2px;
+   }
+
+   div#cmdbox { 
+              margin-top:20px;
+              width:400px; 
+              height:70px; 
+              margin-left:80px;
+              background-color:rgba(0,0,0,0.5);
+              color:#fff; 
+              padding:20px; 
+              font-size:25px
+            }
+
+ input#ds{ width:450px; 
+           height:30px; 
+           padding:10px; 
+           border:none; 
+           border-radius:25px; 
+           outline:none;
+         }
+
+ button { height:40px; 
+          width:100px; 
+          background: #ffeb3b; 
+          border:none; 
+          color: #000; 
+          border-radius: 25px; 
+        }
+
+ pre{ position:absolute;
+      right:50px;
+      top:70px;
+      width:600px; 
+      height:500px; 
+      background:rgba(0,0,0,0.4); 
+      padding:30px; 
+      font-size:23px; 
+      color:#fff
+    }
+
+ button:hover{ background:#ffc107; 
+               cursor: pointer; }
+
+</style>
+ <body>
+  <div id="hd">
+  <form method="post" action="http://localhost:5000/upload" enctype="multipart/form-data">
+   <h1>CAR INFO DESK</h1>
+   <div id="cmdbox">
+   Upload Vehical Image:  
+   <br>
+   <input type="file" name="file1">
+   <button type="submit" class="btn btn-primary">Submit</button>
+   <br>
+   </div>
+   <pre>
+      <div id="d1" class="output"><b>Your Car Information is here...</b><br>{{output}}</div>
+   </pre>
+   </div>
+  </form>
+  </div>
+ </body>
+</html>
